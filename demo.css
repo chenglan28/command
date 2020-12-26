@@ -1,0 +1,28 @@
+#demo {
+background:url(background.png);
+width:1920px;
+height:1080px;
+position:absolute;
+top:0px;
+left:0px;
+}
+.setting {
+width:120px;
+height:120px;
+position:absolute;
+top:0px;
+right:0px;
+}
+.close {
+width:15px;
+height:15px;
+position:absolute;
+top:0px;
+right:0px;
+}
+.title {
+font-size:15px;
+position:absolute;
+top:0px;
+left:0px;
+}

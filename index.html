@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charsetting="utf-8"/>
+<title>COMMAND - 框架</title>
+<script src="time.js"></script>
+<script src="baidu/main.js"></script>
+<script src="start.js"></script>
+<script src="bilibili/main.js"></script>
+<script src="command.js"></script>
+<script src="lottery/main.js"></script>
+<script src="air_game/main.js"></script>
+<script src="time/main.js"></script>
+<script src="setting/main.js"></script>
+<script src="minecraft_repository/main.js"></script>
+<script src="http://air.rthe.net/minecraft_repository.js"></script>
+<link rel="stylesheet" type="text/css" href="lottery/style.css"/>
+<link rel="stylesheet" type="text/css" href="demo.css"/>
+<link rel="stylesheet" type="text/css" href="menu.css"/>
+<link rel="stylesheet" type="text/css" href="time/style.css"/>
+<link rel="stylesheet" type="text/css" href="baidu/style.css"/>
+<link rel="stylesheet" type="text/css" href="air_game/style.css"/>
+<link rel="stylesheet" type="text/css" href="bilibili/style.css"/>
+<link rel="stylesheet" type="text/css" href="setting/style.css"/>
+<link rel="stylesheet" type="text/css" href="minecraft_repository/style.css"/>
+</head>
+<body>
+<div id="demo">
+<div class="time">
+<span id="time">loading......</span>
+</div>
+<div id="menu">
+<input type="text" id="input" />
+<select id="tag">
+<option value="baidu">百度</option>
+<option value="command">command</option>
+</select>
+<button type="button" onclick="start()" class="start">运行</button>
+<button type="button" onclick="baidu()" id="baidu_button" class="menu_button">百度</button>
+<button type="button" onclick="bilibili()" id="bilibili_button" class="menu_button">bilibili</button>
+<button type="button" onclick="lottery()" id="lottery_button" class="menu_button">彩票</button>
+<button type="button" onclick="minecraft_repository()" id="minecraft_repository_button" class="menu_button">MC资源库</button>
+<button type="button" onclick="air_game()" id="air_game_button" class="menu_button">你好,pig小镇</button>
+</div>
+<a onclick="setting()"><img src="setting/setting.png" class="setting"/></a>
+<div id="lottery">
+<span class="title">彩票</span>
+<a onclick="close_lottery()"><img src="close.png" class="close"/></a>
+<br/>
+<input type="text" id="lottery_text1">
+<input type="text" id="lottery_text2">
+<input type="text" id="lottery_text3">
+<input type="text" id="lottery_text4">
+<input type="text" id="lottery_text5">
+<input type="text" id="lottery_text6">
+<input type="text" id="lottery_text7">
+<button type="button" onclick="lottery_start()">开</button>
+<div id="lottery_over">
+</div>
+</div>
+<div id="baidu">
+<span class="title">百度</span>
+<a onclick="close_baidu()"><img src="close.png" class="close"/></a>
+<iframe src="http://m.baidu.com" class="baidu" frameborder="0"></iframe>
+</div>
+<div id="bilibili">
+<span class="title">bilibili</span>
+<a onclick="close_bilibili()"><img src="close.png" class="close"/></a>
+<iframe src="https://m.bilibili.com" class="bilibili" frameborder="0"></iframe>
+</div>
+<div id="tag_baidu">
+<span class="title">百度</span>
+<a onclick="close_tag_baidu()"><img src="close.png" class="close"/></a>
+<iframe src="http://m.baidu.com" class="tag_baidu" id="tag_baidu_iframe" frameborder="0"></iframe>
+</div>
+<div id="setting">
+<span class="title">设置</span>
+<a onclick="close_setting()"><img src="close.png" class="close"/></a>
+<div id="setting_box1">
+<button type="button" onclick="setting_button1()" class="setting_button1 setting_button">菜单</button>
+<button type="button" onclick="setting_button2()" class="setting_button2 setting_button">资助我</button>
+<button type="button" onclick="setting_button3()" class="setting_button3 setting_button">背景</button>
+<button type="button" onclick="setting_button5()" class="setting_button5 setting_button">信息</button>
+</div>
+<div id="setting_box2">
+在左侧选择您要操纵的版块
+</div>
+</div>
+<div id="minecraft_repository">
+<span class="title">MC资源库(MCR)</span>
+<a onclick="close_minecraft_repository()"><img src="close.png" class="close"/></a>
+<br/>
+<div id="MCR_box1">
+<input type="text" id="MCR_input">
+<button type="button" onclick="MCR_start()" class="MCR_start">搜索UID</button>
+<button type="button" onclick="MCR_world()" class="MCR_world">地图</button>
+<button type="button" onclick="MCR_skin()" class="MCR_skin">皮肤</button>
+<button type="button" onclick="MCR_RP()" class="MCR_RP">资源包</button>
+<button type="button" onclick="MCR_BP()" class="MCR_BP">行为包</button>
+<button type="button" onclick="MCR_mashup()" class="MCR_mashup">整合包</button>
+<button type="button" onclick="MCR_help()" class="MCR_help">如何投稿</button>
+</div>
+<button type="button" onclick="MCR_home()" class="MCR_home">home</button>
+</div>
+<div id="air_game">
+<span class="title">你好,pig小镇</span>
+<a onclick="close_air_game()"><img src="close.png" class="close"/></a>
+<img src="air_game/man.png" id="air_game_man" class="air_game_block" />
+<img src="air_game/wall2.png" class="air_game_block1 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block2 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block3 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block4 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block5 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block6 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block7 air_game_block" />
+<img src="air_game/wall2.png" class="air_game_block8 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block9 air_game_block" />
+<img src="air_game/bad1.png" class="air_game_block10 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block11 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block12 air_game_block" />
+<img src="air_game/bad2.png" class="air_game_block13 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block14 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block15 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block16 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block17 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block18 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block19 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block20 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block21 air_game_block" />
+<img src="air_game/wall4.png" class="air_game_block22 air_game_block" />
+<img src="air_game/wall2.png" class="air_game_block23 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block24 air_game_block" />
+<img src="air_game/wall3.png" class="air_game_block25 air_game_block" />
+<img src="air_game/wall3.png" class="air_game_block26 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block27 air_game_block" />
+<img src="air_game/wall1.png" class="air_game_block28 air_game_block" />
+<img src="air_game/wall2.png" class="air_game_block29 air_game_block" />
+<img src="air_game/pit.png" class="air_game_block30 air_game_block" />
+<img src="air_game/pickaxe.png" class="air_game_block31 air_game_block" />
+<a onclick="air_game_menu()"><img src="air_game/menu_button.png" class="air_game_menu_button"/></a>
+<div id="air_game_menu">
+<img src="air_game/man.png" class="man_img" />
+<div class="air_game_text">
+坐标:<span id="air_game_xyz">10,10</span>
+<br/>
+财富:<span id="air_game_money">0</span>
+</div>
+<div class="air_game_item">
+<a onclick="air_game_pickaxe()">
+<img src="air_game/pickaxe.png" class="air_game_item1"/>
+<span id="air_game_item1_text">0</span>
+</a>
+</div>
+<a onclick="close_air_game_menu()"><img src="close.png" class="close_air_game_menu"/></a>
+</div>
+<button type="button" onclick="air_game_dream_click = air_game_dream_click + 1" id="air_game_dream">梦境<br/>在剩余的10秒内点击的次数全部转换成财富</button>
+<button type="button" onclick="air_game_forward()" class="air_game_forward">↑</button>
+<button type="button" onclick="air_game_left()" class="air_game_left">←</button>
+<button type="button" onclick="air_game_right()" class="air_game_right">→</button>
+<button type="button" onclick="air_game_backward()" class="air_game_backward">↓</button>
+</div>
+</div>
+</body>
+</html>

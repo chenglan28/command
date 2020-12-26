@@ -1,0 +1,53 @@
+#menu {
+width:360px;
+height:1080px;
+background-color:white;
+position:absolute;
+top:0px;
+left:0px;
+}
+#input {
+position:absolute;
+top:0px;
+left:0px;
+width:240px;
+height:60px;
+}
+#tag {
+position:absolute;
+top:0px;
+left:240px;
+width:60px;
+height:60px;
+}
+.start {
+position:absolute;
+top:0px;
+left:300px;
+width:60px;
+height:60px;
+}
+.menu_button {
+position:absolute;
+left:0px;
+width:360px;
+height:60px;
+}
+#baidu_button {
+top:60px;
+}
+#bilibili_button {
+top:120px;
+}
+#lottery_button {
+top:180px;
+}
+#minecraft_repository_button {
+top:240px;
+}
+#air_game_button {
+top:300px;
+}
+#file_manager_button {
+top:360px;
+}
