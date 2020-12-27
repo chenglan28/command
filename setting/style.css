@@ -1,0 +1,53 @@
+#setting {
+border:1px solid gray;
+width:1280px;
+height:720px;
+background-color:white;
+position:absolute;
+top:50px;
+left:50px;
+display:none;
+}
+#setting_box1 {
+overflow:scroll;
+width:120px;
+height:700px;
+position:absolute;
+top:20px;
+left:0px;
+}
+#setting_box2 {
+overflow:scroll;
+width:1160px;
+height:700px;
+position:absolute;
+top:20px;
+left:120px;
+}
+.subsidize {
+width:650px;
+height:650px;
+}
+.open_setting,
+.close_setting {
+width:40px;
+height:21px;
+}
+.setting_button {
+position:absolute;
+left:0px;
+width:120px;
+height:20px;
+}
+.setting_button1 {
+top:0px;
+}
+.setting_button2 {
+top:20px;
+}
+.setting_button3 {
+top:40px;
+}
+.setting_button5 {
+top:60px;
+}
