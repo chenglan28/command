@@ -1,0 +1,28 @@
+#tag_baidu {
+border:1px solid gray;
+width:1280px;
+height:720px;
+background-color:white;
+position:absolute;
+top:40px;
+left:40px;
+display:none;
+}
+#baidu {
+border:1px solid gray;
+width:1280px;
+height:720px;
+background-color:white;
+position:absolute;
+top:20px;
+left:20px;
+display:none;
+}
+.tag_baidu,
+.baidu {
+width:1280px;
+height:700px;
+position:absolute;
+top:20px;
+left:0px;
+}
