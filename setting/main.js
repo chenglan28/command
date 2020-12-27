@@ -37,7 +37,7 @@ document.getElementById("demo").style.backgroundImage = "url(" + setting_var1 + 
 }
 version = "4.6.3";
 function setting_button5(){
-document.getElementById("setting_box2").innerHTML = "<img src='setting/command.png' /><br/><input type='text' id='setting_input2' /><button type='button' onclick='setting_button7()'>获取</button><button type='button' onclick='setting_button8()'>加载</button><br/>版本:" + version;
+document.getElementById("setting_box2").innerHTML = "<img src='setting/command.png' /><br/><input type='text' id='toolbox' /><button type='button' onclick='setting_button7()'>获取</button><button type='button' onclick='setting_button8()'>加载</button><br/>版本:" + version;
 }
 function setting_button7(){
 toolbox_var4 = document.getElementById("input").value;
@@ -57,10 +57,10 @@ toolbox_var17 = air_game_x;
 toolbox_var18 = air_game_y;
 toolbox_var19 = air_game_money;
 toolbox_var1 = toolbox_var4 + ";" + toolbox_var5 + ";" + toolbox_var6 + ";" + toolbox_var7 + ";" + toolbox_var8 + ";" + toolbox_var9 + ";" + toolbox_var10 + ";" + toolbox_var11 + ";" + toolbox_var12 + ";" + toolbox_var13 + ";" + toolbox_var14 + ";" + toolbox_var15 + ";" + toolbox_var16 + ";" + toolbox_var17 + ";" + toolbox_var18 + ";" + toolbox_var19 + ";";
-document.getElementById("setting_input2").value = toolbox_var1;
+document.getElementById("toolbox").value = toolbox_var1;
 }
 function setting_button8(){
-toolbox_var2 = document.getElementById("setting_input2").value;
+toolbox_var2 = document.getElementById("toolbox").value;
 toolbox_var3 = toolbox_var2.split(';');
 if(toolbox_var3[0] !==""){
 document.getElementById("input").value = toolbox_var3[0];
