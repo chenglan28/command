@@ -1,0 +1,29 @@
+#lottery {
+border:1px solid gray;
+display:none;
+width:220px;
+height:100px;
+background-color:white;
+position:absolute;
+top:10px;
+left:10px;
+}
+#lottery_text1,
+#lottery_text2,
+#lottery_text3,
+#lottery_text4,
+#lottery_text5,
+#lottery_text6,
+#lottery_text7,
+#lottery_start {
+width:7%;
+}
+#lottery_over1,
+#lottery_over2,
+#lottery_over3,
+#lottery_over4,
+#lottery_over5,
+#lottery_over6,
+#lottery_over7 {
+color:red;
+}
